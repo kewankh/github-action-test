@@ -8,7 +8,7 @@ jobs:
     setps:
       - name: Simple JS Action
         id: greet
-        uses: actions/hello-world-javascript-action@main
+        uses: actions/hello-world-javascript-action@v1
         with:
           who-to-greet: Kewan
       - name: Log Greeting The Time
