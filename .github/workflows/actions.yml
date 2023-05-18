@@ -1,7 +1,5 @@
 name: Actions Workflow
 
-on: [push]
-
 jobs:
   run-github-actions:
     runs-on: ubuntu-latest
@@ -12,4 +10,4 @@ jobs:
         with:
           who-to-greet: Kewan
       - name: Log Greeting The Time
-        run: echo "${{steps.greet.outputs.time}}"
+        run: echo "${{ steps.greet.outputs.time }}"
