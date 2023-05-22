@@ -5,7 +5,7 @@ on: [push]
 jobs:
   run-github-actions:
     runs-on: ubuntu-latest
-    setps:
+    steps:
       - name: Simple JS Action
         id: greet
         uses: actions/hello-world-javascript-action@v1
@@ -13,4 +13,3 @@ jobs:
           who-to-greet: Kewan
       - name: Log Greeting The Time
         run: echo "${{ steps.greet.outputs.time }}"
-        
